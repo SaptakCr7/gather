@@ -105,11 +105,16 @@ window.onload = initializer();
 function submit() {
   const element = document.getElementById("form");
   const element2 = document.getElementById("text-input");
+  const element3 = document.createElement("div");
+  // element2.style.display = "block";
+  // element.style.display = "block";
+  element3.appendChild(element.cloneNode(true));
+  element3.appendChild(document.createElement("br"));
+  element3.appendChild(document.createElement("br"));
 
-  element.style.display = "block";
-  element2.style.display = "block";
+  element3.appendChild(element2.cloneNode(true));
 
-  html2pdf(element, element2, {
+  html2pdf(element3, {
     margin: 10,
     filename: "myfile.pdf",
     image: { type: "jpeg", quality: 0.98 },
