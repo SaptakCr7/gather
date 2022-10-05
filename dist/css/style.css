@@ -4,33 +4,66 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+}
+
 .container {
-  width: 100vw;
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .container .items {
-  padding: 0px 0 20px 0;
+  padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(9, 39, 72, 0.2);
   display: flex;
   flex-direction: column;
-  grid-gap: 10px;
   align-items: center;
   margin: auto;
-  width: 60%;
+  width: 70%;
+  border-radius: 20px;
+}
+.container .items .btn {
+  background-color: #ed491a;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.container .items .btn:hover {
+  background-color: #020929;
 }
 .container .items #form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   grid-gap: 10px;
   align-items: center;
 }
+.container .items #form .responsive {
+  width: 30%;
+  height: auto;
+}
+.container .items #form .responsive2 {
+  width: 100%;
+  height: auto;
+}
+.container .items #form .main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .items #form .main input {
+  border: 1px solid #9b9b9b;
+  padding: 20px 13px;
+}
 .container .items .container-textarea {
-  background-color: #efcccc;
-  width: 120vmin;
+  background-color: #ffffff;
   padding: 30px 30px;
   border-radius: 10px;
-  box-shadow: 0 25px 50px rgba(9, 39, 72, 0.2);
 }
 .container .items .container-textarea .options {
   display: flex;
@@ -49,6 +82,7 @@
   background-color: #ffffff;
   outline: none;
   color: #020929;
+  cursor: pointer;
 }
 .container .items .container-textarea .options button:hover {
   background-color: lightblue;
@@ -62,6 +96,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 20px 13px;
 }
 .container .items .container-textarea .options .input-wrapper input[type=color] {
   -webkit-appearance: none;
@@ -75,21 +110,23 @@
 }
 .container .items .container-textarea .options .input-wrapper input[type=color]::-webkit-color-swatch {
   border-radius: 15px;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
 }
 .container .items .container-textarea .options .input-wrapper input[type=color]::-moz-color-swatch {
   border-radius: 15px;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+.container .items div:empty:before {
+  content: attr(data-placeholder);
+  color: gray;
+  font-size: 5;
 }
 .container .items #text-input {
   margin-top: -20px;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #9a9a9a;
   padding: 20px;
   min-height: 30vh;
-  width: 118vmin;
   border-radius: 10px;
-  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+  width: 95%;
 }
 .container .items .active {
   background-color: #e0e9ff;
