@@ -107,23 +107,37 @@ const highlighterRemover = (className) => {
 
 window.onload = initializer();
 //PDF generator
-function submit() {
-  const element = document.getElementById("form");
+function print() {
+  const img = document.getElementById("responsive1");
+  const element = document.getElementById("main");
   const element2 = document.getElementById("text-input");
   const element3 = document.createElement("div");
-  // element2.style.display = "block";
-  // element.style.display = "block";
+
+  img.style.margintop = "-200px";
+
+  img.style.marginLeft = "280px";
+
+  element.style.marginLeft = "150px";
+
+  element2.style.fontSize = "x-large";
+
+  element2.style.height = "2000px";
+
+  element3.appendChild(img.cloneNode(true));
+  element3.appendChild(document.createElement("br"));
+  element3.appendChild(document.createElement("br"));
   element3.appendChild(element.cloneNode(true));
   element3.appendChild(document.createElement("br"));
   element3.appendChild(element2.cloneNode(true));
 
   html2pdf(element3, {
-    margin: [-3, 1, 0, 1],
-    width: element2.width,
-    height: element2.height,
+    margin: [0, 0, 0, 0],
     filename: "myfile.pdf",
     image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 1 },
-    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-  });
+    html2canvas: { dpi: 192, letterRendering: true },
+    jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+  }).set({ html2canvas: { scale: 1 } });
 }
+// function refresh() {
+//   window.parent.location = window.parent.location.href;
+// }
