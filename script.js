@@ -107,6 +107,7 @@ const highlighterRemover = (className) => {
 
 window.onload = initializer();
 //PDF generator
+function reload() {}
 function print() {
   const img = document.getElementById("responsive1");
   const element = document.getElementById("main");
@@ -135,7 +136,3 @@ function print() {
     jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
   }).set({ html2canvas: { scale: 1 } });
 }
-
-// function refresh() {
-//   window.parent.location = window.parent.location.href;
-// }
