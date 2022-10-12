@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 70%;
+  width: 95%;
   border-radius: 20px;
 }
 .container .items .btn {
