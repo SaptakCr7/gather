@@ -52,7 +52,7 @@ body{
               display: flex;
               flex-wrap: wrap;
               input{
-                border: 1px solid #9b9b9b;
+                border: none;
                 padding: 20px 13px;
               }
             }
@@ -145,3 +145,8 @@ body{
     }
 }
 
+@media print{
+  .options{
+      display:none;
+  }
+}

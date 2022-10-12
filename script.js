@@ -105,34 +105,38 @@ const highlighterRemover = (className) => {
   });
 };
 
-window.onload = initializer();
-//PDF generator
-function reload() {}
-function print() {
-  const img = document.getElementById("responsive1");
-  const element = document.getElementById("main");
-  const element2 = document.getElementById("text-input");
-  const element3 = document.createElement("div");
+var noPrintElements = [];
 
-  img.style.marginLeft = "280px";
+window.addEventListener("beforeprint", function (event) {
+  var hideMe = document.getElementsByClassName("options");
+  noPrintElements = [];
+  Array.prototype.forEach.call(hideMe, function (item, index) {
+    noPrintElements.push({ element: item, display: item.style.display });
+    item.style.display = "none"; // hide the element
+  });
+});
 
-  element.style.marginLeft = "150px";
+window.addEventListener("afterprint", function (event) {
+  Array.prototype.forEach.call(noPrintElements, function (item, index) {
+    item.element.style.display = item.display; // restore the element
+  });
+  noPrintElements = []; // just to be on the safe side
+});
 
-  element2.style.fontSize = "large";
-  // element2.style.height = "700px";
-  element3.appendChild(img.cloneNode(true));
-  element3.appendChild(document.createElement("br"));
-  element3.appendChild(document.createElement("br"));
-  element3.appendChild(element.cloneNode(true));
-  element3.appendChild(document.createElement("br"));
-  element3.appendChild(element2.cloneNode(true));
+var noPrintElements = [];
 
-  element3.style.height = "1000px";
-  html2pdf(element3, {
-    margin: [0, 0.2, 0.2, 0.2],
-    filename: "myfile.pdf",
-    // image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { dpi: 192, letterRendering: true },
-    jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-  }).set({ html2canvas: { scale: 1 } });
-}
+window.addEventListener("beforeprint", function (event) {
+  var hideMe = document.getElementsByClassName("btn");
+  noPrintElements = [];
+  Array.prototype.forEach.call(hideMe, function (item, index) {
+    noPrintElements.push({ element: item, display: item.style.display });
+    item.style.display = "none"; // hide the element
+  });
+});
+
+window.addEventListener("afterprint", function (event) {
+  Array.prototype.forEach.call(noPrintElements, function (item, index) {
+    item.element.style.display = item.display; // restore the element
+  });
+  noPrintElements = []; // just to be on the safe side
+});
