@@ -54,6 +54,9 @@ body{
                 border: none;
                 padding: 20px 13px;
               }
+              input:hover{
+                border: 1px solid black;
+              }
             }
             
           }     
@@ -87,6 +90,10 @@ body{
                       padding: 7px;
                       border: 1px solid #020929;
                       border-radius: 3px;
+                      .options label,
+                      .options select {
+                        font-family: "Poppins", sans-serif;
+                        }
                     }
                     .input-wrapper {
                       display: flex;
@@ -114,7 +121,7 @@ body{
                       }
                     }
                   }
-                  div:empty:before {
+                    div:empty:before {
                     content:attr(data-placeholder);
                     color:gray;
                     font-size: 5;
@@ -127,6 +134,9 @@ body{
                     min-height: 40vh;
                     border-radius: 10px;
                     width: 95%;    
+                  }
+                  #text-input:hover{
+                    border: 1px solid black;
                   }
                   .active {
                     background-color: #e0e9ff;

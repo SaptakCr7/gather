@@ -59,6 +59,9 @@ body {
   border: none;
   padding: 20px 13px;
 }
+.container .items #form .main input:hover {
+  border: 1px solid black;
+}
 .container .items .options {
   background-color: #ffffff;
   padding: 20px 30px;
@@ -89,6 +92,10 @@ body {
   padding: 7px;
   border: 1px solid #020929;
   border-radius: 3px;
+}
+.container .items .options select .options label,
+.container .items .options select .options select {
+  font-family: "Poppins", sans-serif;
 }
 .container .items .options .input-wrapper {
   display: flex;
@@ -124,6 +131,9 @@ body {
   min-height: 40vh;
   border-radius: 10px;
   width: 95%;
+}
+.container #text-input:hover {
+  border: 1px solid black;
 }
 .container .active {
   background-color: #e0e9ff;
