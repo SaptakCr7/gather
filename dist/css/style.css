@@ -59,22 +59,18 @@ body {
   border: none;
   padding: 20px 13px;
 }
-.container .items .container-textarea {
+.container .items .options {
   background-color: #ffffff;
-  padding: 30px 30px;
+  padding: 20px 30px;
   border-radius: 10px;
-}
-.container .items .container-textarea .options {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  grid-gap: 30px;
 }
-.container .items .container-textarea .options button {
+.container .items .options button {
   padding-top: 3px;
-  width: 20px;
-  height: 20px;
   display: grid;
   border-radius: 3px;
   border: none;
@@ -83,21 +79,21 @@ body {
   color: #020929;
   cursor: pointer;
 }
-.container .items .container-textarea .options button:hover {
+.container .items .options button:hover {
   background-color: lightblue;
 }
-.container .items .container-textarea .options select {
+.container .items .options select {
   padding: 7px;
   border: 1px solid #020929;
   border-radius: 3px;
 }
-.container .items .container-textarea .options .input-wrapper {
+.container .items .options .input-wrapper {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 20px 13px;
 }
-.container .items .container-textarea .options .input-wrapper input[type=color] {
+.container .items .options .input-wrapper input[type=color] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -107,18 +103,18 @@ body {
   border: none;
   cursor: pointer;
 }
-.container .items .container-textarea .options .input-wrapper input[type=color]::-webkit-color-swatch {
+.container .items .options .input-wrapper input[type=color]::-webkit-color-swatch {
   border-radius: 15px;
 }
-.container .items .container-textarea .options .input-wrapper input[type=color]::-moz-color-swatch {
+.container .items .options .input-wrapper input[type=color]::-moz-color-swatch {
   border-radius: 15px;
 }
-.container .items div:empty:before {
+.container div:empty:before {
   content: attr(data-placeholder);
   color: gray;
   font-size: 5;
 }
-.container .items #text-input {
+.container #text-input {
   margin-top: -20px;
   background-color: #ffffff;
   padding: 20px;
@@ -126,16 +122,17 @@ body {
   border-radius: 10px;
   width: 95%;
 }
-.container .items .active {
+.container .active {
   background-color: #e0e9ff;
 }
-.container .main {
+
+.main {
   margin: 10px 0 10px 0;
   display: flex;
   align-items: center;
   grid-gap: 10px;
 }
-.container .main .input {
+.main .input {
   height: 30px;
   border-radius: 5px;
 }

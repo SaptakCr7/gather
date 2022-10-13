@@ -65,138 +65,93 @@
             <input class="input" type="date" id="dob" name="dob" />
           </form>
         </div>
-        <div class="container-textarea">
-          <div class="options">
-            <!-- Text Format -->
-            <button id="bold" class="option-button format">
-              <i class="fa-solid fa-bold"></i>
-            </button>
-            <button id="italic" class="option-button format">
-              <i class="fa-solid fa-italic"></i>
-            </button>
-            <button id="underline" class="option-button format">
-              <i class="fa-solid fa-underline"></i>
-            </button>
-            <button id="strikethrough" class="option-button format">
-              <i class="fa-solid fa-strikethrough"></i>
-            </button>
-
-            <button id="insertUnorderedList" class="option-button">
-              <i class="fa-solid fa-list"></i>
-            </button>
-            <!-- Undo/Redo -->
-            <button id="undo" class="option-button">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-            <button id="redo" class="option-button">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-            <!-- Link -->
-            <button id="createLink" class="adv-option-button">
-              <i class="fa fa-link"></i>
-            </button>
-            <button id="unlink" class="option-button">
-              <i class="fa fa-unlink"></i>
-            </button>
-            <!-- Alignment -->
-            <button id="justifyLeft" class="option-button align">
-              <i class="fa-solid fa-align-left"></i>
-            </button>
-            <button id="justifyCenter" class="option-button align">
-              <i class="fa-solid fa-align-center"></i>
-            </button>
-            <button id="justifyRight" class="option-button align">
-              <i class="fa-solid fa-align-right"></i>
-            </button>
-            <button id="justifyFull" class="option-button align">
-              <i class="fa-solid fa-align-justify"></i>
-            </button>
-            <!-- Headings -->
-            <select id="formatBlock" class="adv-option-button">
-              <option value="H1">H1</option>
-              <option value="H2">H2</option>
-              <option value="H3">H3</option>
-              <option value="H4">H4</option>
-              <option value="H5">H5</option>
-              <option value="H6">H6</option>
-            </select>
-            <!-- Font -->
-            <select id="fontName" class="adv-option-button"></select>
-            <select id="fontSize" class="adv-option-button"></select>
-            <!-- Color -->
-            <div class="input-wrapper">
-              <input type="color" id="foreColor" class="adv-option-button" />
-              <label for="foreColor">Font Color</label>
-            </div>
-            <!-- <div class="input-wrapper">
-              <input type="color" id="backColor" class="adv-option-button" />
-              <label for="backColor">Highlight Color</label>
-            </div> -->
+        <div class="options">
+          <!-- Text Format -->
+          <button id="bold" class="option-button format ">
+            <i class="fa-solid fa-bold fa-lg"></i>
+          </button>
+          <button id="italic" class="option-button format ">
+            <i class="fa-solid fa-italic fa-lg"></i>
+          </button>
+          <button id="underline" class="option-button format">
+            <i class="fa-solid fa-underline fa-lg"></i>
+          </button>
+          <button id="strikethrough" class="option-button format">
+            <i class="fa-solid fa-strikethrough fa-lg"></i>
+          </button>
+          <!-- <button id="superscript" class="option-button script">
+            <i class="fa-solid fa-superscript fa-lg"></i>
+          </button>
+          <button id="subscript" class="option-button script">
+            <i class="fa-solid fa-subscript fa-lg"></i>
+          </button> -->
+          <!-- List -->
+          <!-- <button id="insertOrderedList" class="option-button">
+            <div class="fa-solid fa-list-ol"></div> -->
+          </button>
+          <button id="insertUnorderedList" class="option-button">
+            <i class="fa-solid fa-list fa-lg"></i>
+          </button>
+          <!-- Undo/Redo -->
+          <button id="undo" class="option-button">
+            <i class="fa-solid fa-rotate-left fa-lg"></i>
+          </button>
+          <button id="redo" class="option-button">
+            <i class="fa-solid fa-rotate-right fa-lg"></i>
+          </button>
+          <!-- Link -->
+          <button id="createLink" class="adv-option-button">
+            <i class="fa fa-link fa-lg"></i>
+          </button>
+          <!-- <button id="unlink" class="option-button">
+            <i class="fa fa-unlink fa-lg"></i> -->
+          </button>
+          <!-- Alignment -->
+          <button id="justifyLeft" class="option-button align">
+            <i class="fa-solid fa-align-left fa-lg"></i>
+          </button>
+          <button id="justifyCenter" class="option-button align">
+            <i class="fa-solid fa-align-center fa-lg"></i>
+          </button>
+          <button id="justifyRight" class="option-button align">
+            <i class="fa-solid fa-align-right fa-lg"></i>
+          </button>
+          <button id="justifyFull" class="option-button align">
+            <i class="fa-solid fa-align-justify fa-lg"></i>
+          </button>
+          <!-- <button id="indent" class="option-button spacing">
+            <i class="fa-solid fa-indent fa-lg"></i>
+          </button>
+          <button id="outdent" class="option-button spacing">
+            <i class="fa-solid fa-outdent fa-lg"></i>
+          </button> -->
+          <!-- Headings -->
+          <select id="formatBlock" class="adv-option-button">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+          </select>
+          <!-- Font -->
+          <select id="fontName" class="adv-option-button"></select>
+          <select id="fontSize" class="adv-option-button"></select>
+          <!-- Color -->
+          <div class="input-wrapper">
+            <input type="color" id="foreColor" class="adv-option-button" />
+            <label for="foreColor">Font Color</label>
+          </div>
+          <div class="input-wrapper">
+            <input type="color" id="backColor" class="adv-option-button" />
+            <label for="backColor">Highlight Color</label>
           </div>
         </div>
         <div
           id="text-input"
           contenteditable="true"
           data-placeholder="Please Let Us Know How You Found Our Service........"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          temporibus rem quas maiores repudiandae ipsum, nemo pariatur, fuga
-          doloribus quod possimus tempore tenetur excepturi incidunt tempora!
-          Similique, voluptatibus maxime soluta omnis sed eius iusto. Maxime
-          explicabo ex quia? Quae rem odit molestias consequatur laboriosam
-          distinctio voluptatem sequi tenetur veritatis repellat, officiis
-          blanditiis reprehenderit neque illum fugiat eligendi optio delectus
-          ipsa porro aspernatur voluptates quo sint. Dolores saepe error, ut
-          possimus alias, provident sed sapiente consectetur unde temporibus
-          repudiandae totam mollitia reiciendis distinctio. Officia sequi
-          laborum nulla, eveniet mollitia maxime rerum assumenda itaque odit.
-          Veritatis, maxime totam sit aperiam facilis omnis nisi et, quis quos
-          reiciendis maiores culpa vel rerum ipsam deserunt reprehenderit rem,
-          unde animi. Nulla fugiat voluptatum soluta dolorem esse quisquam
-          molestias consectetur, eius distinctio ipsa blanditiis beatae
-          voluptatibus optio magnam quas quia ipsum numquam inventore quam minus
-          iure tempora dolore! Modi est, repellendus in excepturi quis id!
-          Libero porro maxime unde laborum. Voluptates quo ad tempora unde illo!
-          Molestias unde ullam amet adipisci beatae repellendus consectetur nisi
-          rerum eius a doloribus consequuntur explicabo minus non et at
-          necessitatibus cum recusandae quis optio qui, ad iure? Expedita magnam
-          esse repellendus voluptas quidem, beatae eum iusto porro mollitia
-          suscipit labore odio ipsa eligendi architecto aliquam quis quibusdam
-          quasi! Maiores rem corrupti, eos ex eveniet temporibus officiis
-          aperiam repellat error excepturi eum deleniti fugit ea voluptatibus!
-          Dolorem, earum ratione. Aliquam repellat quo optio sunt debitis,
-          quisquam corrupti cupiditate eaque quibusdam incidunt unde, labore
-          fugit tempora ad rerum necessitatibus. Consequuntur commodi iure
-          accusamus expedita ea voluptatum voluptatibus distinctio, explicabo
-          tenetur, rerum nesciunt error. Corrupti, nisi totam delectus libero
-          excepturi repellat modi voluptas distinctio aperiam dolores,
-          architecto autem quisquam dolorum sint expedita alias reprehenderit
-          quia voluptatum atque? Libero, itaque porro odio voluptatibus
-          consequatur ducimus ex, corrupti laboriosam cumque, iure consectetur
-          voluptatum reiciendis eveniet mollitia necessitatibus ut ad et
-          voluptates numquam perferendis optio aspernatur atque! Expedita optio
-          similique aut praesentium, laudantium at ullam eveniet reprehenderit
-          quas fugit earum possimus odio ea laborum quod corrupti harum ratione
-          molestias quidem id exercitationem illo tenetur sed asperiores.
-          Voluptatibus eum rerum doloremque beatae iure facere, vitae porro,
-          maxime earum ipsa libero alias similique. Vel culpa harum, nam ullam
-          minus dolore non rerum, nobis sunt quas eius quos voluptatem.
-          Distinctio, ipsum, sit alias ut quas voluptatibus, aut harum id error
-          quasi doloribus adipisci et dolor minus voluptatem nihil odit. Magni
-          minima quidem, dolores illum, similique eaque id velit deserunt
-          assumenda fuga totam temporibus, autem perspiciatis neque sint impedit
-          laudantium? Nostrum exercitationem, reiciendis quidem quam sint
-          dolores eos. Corporis sint dolor ipsa nostrum tempore veritatis
-          incidunt distinctio odio obcaecati iusto quis accusantium velit
-          excepturi, assumenda, minus aliquam debitis repellendus quam unde
-          mollitia cumque. Aliquam maxime quos sequi culpa repellendus eum quia
-          optio inventore suscipit sapiente est, quod autem quae nihil
-          reprehenderit. Nisi amet perferendis explicabo qui ratione deleniti
-          dolorum optio in magni natus, odio similique eligendi voluptatibus
-          laboriosam itaque. Tempora ipsam veniam ut voluptatum neque debitis
-          pariatur tempore, possimus repellat delectus sit velit vero dolorum!
-          Explicabo sint temporibus eos ex?
-        </div>
+        ></div>
         <button class="btn" onclick="print()">📃 Generate PDF</button>
       </div>
     </div>
