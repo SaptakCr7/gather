@@ -67,11 +67,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  grid-gap: 30px;
+  gap: 30px;
 }
 .container .items .options button {
   padding-top: 3px;
+  height: 28px;
+  width: 28px;
   display: grid;
+  place-items: center;
   border-radius: 3px;
   border: none;
   background-color: #ffffff;
