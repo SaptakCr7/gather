@@ -153,5 +153,4 @@ window.addEventListener("afterprint", function (event) {
 
 function reload() {
   location.reload(true);
-  alert("Reloading Page");
 }
