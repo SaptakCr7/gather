@@ -8,6 +8,8 @@ let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 let scriptButtons = document.querySelectorAll(".script");
+
+let btn = document.querySelector(".btn");
 //List of fontlist
 let fontList = [
   "Arial",
@@ -138,3 +140,18 @@ window.addEventListener("afterprint", function (event) {
   });
   noPrintElements = []; // just to be on the safe side
 });
+
+// window.matchMedia("print").addEventListener(function (media) {
+//   //do before-printing stuff
+//   if (media.matches) {
+//   } else {
+//     media.preventDefault();
+//     window.location.reload(true);
+//     //location.reload();
+//   }
+// });
+
+function reload() {
+  location.reload(true);
+  alert("Reloading Page");
+}

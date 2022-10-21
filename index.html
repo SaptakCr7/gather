@@ -65,94 +65,81 @@
             <input class="input" type="date" id="dob" name="dob" />
           </form>
         </div>
-        <div class="options">
-          <!-- Text Format -->
-          <button id="bold" class="option-button format">
-            <i class="fa-solid fa-bold fa-lg"></i>
-          </button>
-          <button id="italic" class="option-button format">
-            <i class="fa-solid fa-italic fa-lg"></i>
-          </button>
-          <button id="underline" class="option-button format">
-            <i class="fa-solid fa-underline fa-lg"></i>
-          </button>
-          <button id="strikethrough" class="option-button format">
-            <i class="fa-solid fa-strikethrough fa-lg"></i>
-          </button>
-          <!-- <button id="superscript" class="option-button script">
-            <i class="fa-solid fa-superscript fa-lg"></i>
-          </button>
-          <button id="subscript" class="option-button script">
-            <i class="fa-solid fa-subscript fa-lg"></i>
-          </button> -->
-          <!-- List -->
-          <!-- <button id="insertOrderedList" class="option-button">
-            <div class="fa-solid fa-list-ol"></div> -->
-          <!-- </button> -->
-          <button id="insertUnorderedList" class="option-button">
-            <i class="fa-solid fa-list fa-lg"></i>
-          </button>
-          <!-- Undo/Redo -->
-          <button id="undo" class="option-button">
-            <i class="fa-solid fa-rotate-left fa-lg"></i>
-          </button>
-          <button id="redo" class="option-button">
-            <i class="fa-solid fa-rotate-right fa-lg"></i>
-          </button>
-          <!-- Link -->
-          <button id="createLink" class="adv-option-button">
-            <i class="fa fa-link fa-lg"></i>
-          </button>
-          <!-- <button id="unlink" class="option-button">
-            <i class="fa fa-unlink fa-lg"></i> -->
-          <!-- </button> -->
-          <!-- Alignment -->
-          <button id="justifyLeft" class="option-button align">
-            <i class="fa-solid fa-align-left fa-lg"></i>
-          </button>
-          <button id="justifyCenter" class="option-button align">
-            <i class="fa-solid fa-align-center fa-lg"></i>
-          </button>
-          <button id="justifyRight" class="option-button align">
-            <i class="fa-solid fa-align-right fa-lg"></i>
-          </button>
-          <button id="justifyFull" class="option-button align">
-            <i class="fa-solid fa-align-justify fa-lg"></i>
-          </button>
-          <!-- <button id="indent" class="option-button spacing">
-            <i class="fa-solid fa-indent fa-lg"></i>
-          </button>
-          <button id="outdent" class="option-button spacing">
-            <i class="fa-solid fa-outdent fa-lg"></i>
-          </button> -->
-          <!-- Headings -->
-          <select id="formatBlock" class="adv-option-button">
-            <option value="H1">H1</option>
-            <option value="H2">H2</option>
-            <option value="H3">H3</option>
-            <option value="H4">H4</option>
-            <option value="H5">H5</option>
-            <option value="H6">H6</option>
-          </select>
-          <!-- Font -->
-          <select id="fontName" class="adv-option-button"></select>
-          <select id="fontSize" class="adv-option-button"></select>
-          <!-- Color -->
-          <div class="input-wrapper">
-            <input type="color" id="foreColor" class="adv-option-button" />
-            <label for="foreColor">Font Color</label>
+        <div class="section">
+          <div class="options">
+            <!-- Text Format -->
+            <button id="bold" class="option-button format">
+              <i class="fa-solid fa-bold fa-lg"></i>
+            </button>
+            <button id="italic" class="option-button format">
+              <i class="fa-solid fa-italic fa-lg"></i>
+            </button>
+            <button id="underline" class="option-button format">
+              <i class="fa-solid fa-underline fa-lg"></i>
+            </button>
+            <button id="strikethrough" class="option-button format">
+              <i class="fa-solid fa-strikethrough fa-lg"></i>
+            </button>
+
+            <button id="insertUnorderedList" class="option-button">
+              <i class="fa-solid fa-list fa-lg"></i>
+            </button>
+            <!-- Undo/Redo -->
+            <button id="undo" class="option-button">
+              <i class="fa-solid fa-rotate-left fa-lg"></i>
+            </button>
+            <button id="redo" class="option-button">
+              <i class="fa-solid fa-rotate-right fa-lg"></i>
+            </button>
+            <!-- Link -->
+            <button id="createLink" class="adv-option-button">
+              <i class="fa fa-link fa-lg"></i>
+            </button>
+
+            <button id="justifyLeft" class="option-button align">
+              <i class="fa-solid fa-align-left fa-lg"></i>
+            </button>
+            <button id="justifyCenter" class="option-button align">
+              <i class="fa-solid fa-align-center fa-lg"></i>
+            </button>
+            <button id="justifyRight" class="option-button align">
+              <i class="fa-solid fa-align-right fa-lg"></i>
+            </button>
+            <button id="justifyFull" class="option-button align">
+              <i class="fa-solid fa-align-justify fa-lg"></i>
+            </button>
+
+            <select id="formatBlock" class="adv-option-button">
+              <option value="H1">H1</option>
+              <option value="H2">H2</option>
+              <option value="H3">H3</option>
+              <option value="H4">H4</option>
+              <option value="H5">H5</option>
+              <option value="H6">H6</option>
+            </select>
+            <!-- Font -->
+            <select id="fontName" class="adv-option-button"></select>
+            <select id="fontSize" class="adv-option-button"></select>
+            <!-- Color -->
+            <div class="input-wrapper">
+              <input type="color" id="foreColor" class="adv-option-button" />
+              <label for="foreColor">Font Color</label>
+            </div>
+            <div class="input-wrapper">
+              <input type="color" id="backColor" class="adv-option-button" />
+              <label for="backColor">Highlight Color</label>
+            </div>
           </div>
-          <div class="input-wrapper">
-            <input type="color" id="backColor" class="adv-option-button" />
-            <label for="backColor">Highlight Color</label>
-          </div>
+          <div
+            id="text-input"
+            contenteditable="true"
+            data-placeholder="Please Let Us Know How You Found Our Service........"
+          ></div>
         </div>
-        <div
-          id="text-input"
-          contenteditable="true"
-          data-placeholder="Please Let Us Know How You Found Our Service........"
-        ></div>
-        <button class="btn" onclick="print()">📃 Generate PDF</button>
+        <div class="btns">
+          <button class="btn" onclick="window.print();">📃 Generate PDF</button>
+          <button class="btn" onclick="reload()">Reload Page 🔃</button>
+        </div>
       </div>
     </div>
   </body>
