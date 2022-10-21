@@ -151,6 +151,22 @@ window.addEventListener("afterprint", function (event) {
 //   }
 // });
 
-function reload() {
-  location.reload(true);
-}
+// function reload() {
+//   location.reload(true);
+// }
+window.onload = function (e) {
+  //alert();
+  window.onafterprint = function () {
+    //window.location.reload(false);
+    location.reload();
+  };
+  window.matchMedia("print").addListener(function (media) {
+    //do before-printing stuff
+    if (media.matches) {
+    } else {
+      media.preventDefault();
+      window.location.reload(true);
+      //location.reload();
+    }
+  });
+};

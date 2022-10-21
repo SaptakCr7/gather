@@ -156,8 +156,15 @@ body{
            }
     }
 .section{
-  display: flex;
-  // flex-wrap: wrap;
+  // margin-top: 20px;
+  // display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .section{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @page {

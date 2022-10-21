@@ -150,10 +150,13 @@ body {
   border-radius: 5px;
 }
 
-.section {
-  display: flex;
+@media only screen and (max-width: 600px) {
+  .section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
 @page {
   size: auto;
   margin: 0mm;
