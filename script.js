@@ -147,7 +147,7 @@ window.addEventListener("afterprint", function (event) {
 //   } else {
 //     media.preventDefault();
 //     window.location.reload(true);
-//     //location.reload();
+//     location.reload();
 //   }
 // });
 
