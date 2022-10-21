@@ -155,7 +155,10 @@ body{
             border-radius: 5px;
            }
     }
-
+.section{
+  display: flex;
+  // flex-wrap: wrap;
+}
 
 @page {
   size: auto;
