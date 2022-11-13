@@ -115,6 +115,14 @@ window.addEventListener("beforeprint", function (event) {
     item.style.display = "none"; // hide the element
   });
 });
+window.addEventListener("beforeprint", function (event) {
+  var hideMe = document.getElementsByClassName("btn");
+  noPrintElements = [];
+  Array.prototype.forEach.call(hideMe, function (item, index) {
+    noPrintElements.push({ element: item, display: item.style.display });
+    item.style.display = "none"; // hide the element
+  });
+});
 
 window.addEventListener("afterprint", function (event) {
   Array.prototype.forEach.call(noPrintElements, function (item, index) {
@@ -123,13 +131,6 @@ window.addEventListener("afterprint", function (event) {
   noPrintElements = []; // just to be on the safe side
 });
 
-function pdf() {
+window.onafterprint = function () {
   alert();
-  //do before-printing stuff
-  if (media.matches) {
-  } else {
-    media.preventDefault();
-    window.location.reload(true);
-    //location.reload();
-  }
-}
+};
