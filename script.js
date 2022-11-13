@@ -132,5 +132,5 @@ window.addEventListener("afterprint", function (event) {
 });
 
 window.onafterprint = function () {
-  alert();
+  window.location.reload();
 };
