@@ -5,21 +5,19 @@
 }
 body{
   background-image:  linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
-}
-
 .container{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
     .items{
         padding: 20px;
         background-color: #ffffff;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
         width: 95%;
         border-radius: 20px;
+
         .btn{
           background-color: #ed491a;
           font-size: 18px;
@@ -30,40 +28,53 @@ body{
           cursor: pointer;
           margin-top: 20px;
         }
-        .btn:hover{
-          background-color: #020929;
-        }
+        
         #form{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            grid-gap: 10px;
-            align-items: center;
-            #responsive1{
-              width: 30%;
-              height: auto;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+
+            .logoimages{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              max-width: 700px;
+              #responsive1{
+                width: 30%;
+                height: auto;
+              }
+              #responsive2{
+                width: 100%;
+                height: auto;
+              }
+              
             }
-            #responsive2{
-              width: 100%;
-              height: auto;
-            }
-            .main{
+            
+            .inputboxes{
+              top: 30%;
+              width: 120%;
               display: flex;
               flex-wrap: wrap;
+              justify-content: space-evenly;
+
+              #fname{
+                width: 250px;
+              }
               input{
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 15px;
+                text-align: center;
                 border: none;
-                padding: 20px 13px;
+                margin: 20px 13px;
               }
               input:hover{
                 border: 1px solid black;
               }
             }
             
-          }     
-            // .section{
-            //   margin-top: 20px;
-            //   display: flex;
-            // }
+          }  
               .options {
                   background-color: #ffffff;
                   padding: 20px 30px;
@@ -131,12 +142,13 @@ body{
                     
                   }
                   #text-input {
-                  margin-top: -20px;
                    background-color: #ffffff;
-                    padding: 20px;
+                   line-height: 20px;
+                      padding: 20px;
                     min-height: 40vh;
                     border-radius: 10px;
                     width: 95%;    
+             
                   }
                   #text-input:hover{
                     border: 1px solid black;
@@ -144,18 +156,9 @@ body{
                   .active {
                     background-color: #e0e9ff;
                   }
-        }
-        .main{
-        margin: 10px 0 10px 0;
-        display: flex;
-        align-items: center;
-          grid-gap: 10px;
-           .input{
-            height: 30px;
-            border-radius: 5px;
-           }
+          
     }
-
+  }
 @media only screen and (max-width: 600px) {
   .section{
     margin-top: 20px;
@@ -165,6 +168,6 @@ body{
 }
 
 @page {
-  size: auto;
+  size: 21cm, 29.7cm;
   margin: 0mm;
 }

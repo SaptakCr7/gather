@@ -103,9 +103,9 @@ const highlighterRemover = (className) => {
     button.classList.remove("active");
   });
 };
-window.onload = initializer();
+// window.onload = initializer();
 
-var noPrintElements = [];
+// var noPrintElements = [];
 
 window.addEventListener("beforeprint", function (event) {
   var hideMe = document.getElementsByClassName("options");
@@ -123,50 +123,13 @@ window.addEventListener("afterprint", function (event) {
   noPrintElements = []; // just to be on the safe side
 });
 
-var noPrintElements = [];
-
-window.addEventListener("beforeprint", function (event) {
-  var hideMe = document.getElementsByClassName("btn");
-  noPrintElements = [];
-  Array.prototype.forEach.call(hideMe, function (item, index) {
-    noPrintElements.push({ element: item, display: item.style.display });
-    item.style.display = "none"; // hide the element
-  });
-});
-
-window.addEventListener("afterprint", function (event) {
-  Array.prototype.forEach.call(noPrintElements, function (item, index) {
-    item.element.style.display = item.display; // restore the element
-  });
-  noPrintElements = []; // just to be on the safe side
-});
-
-// window.matchMedia("print").addEventListener(function (media) {
-//   //do before-printing stuff
-//   if (media.matches) {
-//   } else {
-//     media.preventDefault();
-//     window.location.reload(true);
-//     location.reload();
-//   }
-// });
-
-// function reload() {
-//   location.reload(true);
-// }
-window.onload = function (e) {
-  //alert();
-  window.onafterprint = function () {
-    //window.location.reload(false);
-    location.reload();
-  };
-  window.matchMedia("print").addListener(function (media) {
-    //do before-printing stuff
-    if (media.matches) {
-    } else {
-      media.preventDefault();
-      window.location.reload(true);
-      //location.reload();
-    }
-  });
-};
+function pdf() {
+  alert();
+  //do before-printing stuff
+  if (media.matches) {
+  } else {
+    media.preventDefault();
+    window.location.reload(true);
+    //location.reload();
+  }
+}

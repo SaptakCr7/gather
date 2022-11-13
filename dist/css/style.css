@@ -7,23 +7,21 @@
 body {
   background-image: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
 }
-
-.container {
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+body .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-.container .items {
+body .container .items {
   padding: 20px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
   width: 95%;
   border-radius: 20px;
 }
-.container .items .btn {
+body .container .items .btn {
   background-color: #ed491a;
   font-size: 18px;
   border-radius: 5px;
@@ -33,36 +31,47 @@ body {
   cursor: pointer;
   margin-top: 20px;
 }
-.container .items .btn:hover {
-  background-color: #020929;
-}
-.container .items #form {
+body .container .items #form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  grid-gap: 10px;
   align-items: center;
 }
-.container .items #form #responsive1 {
+body .container .items #form .logoimages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+body .container .items #form .logoimages #responsive1 {
   width: 30%;
   height: auto;
 }
-.container .items #form #responsive2 {
+body .container .items #form .logoimages #responsive2 {
   width: 100%;
   height: auto;
 }
-.container .items #form .main {
+body .container .items #form .inputboxes {
+  top: 30%;
+  width: 120%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.container .items #form .main input {
+body .container .items #form .inputboxes #fname {
+  width: 250px;
+}
+body .container .items #form .inputboxes input {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
   border: none;
-  padding: 20px 13px;
+  margin: 20px 13px;
 }
-.container .items #form .main input:hover {
+body .container .items #form .inputboxes input:hover {
   border: 1px solid black;
 }
-.container .items .options {
+body .container .items .options {
   background-color: #ffffff;
   padding: 20px 30px;
   border-radius: 10px;
@@ -72,7 +81,7 @@ body {
   align-items: center;
   gap: 30px;
 }
-.container .items .options button {
+body .container .items .options button {
   padding-top: 3px;
   height: 28px;
   width: 28px;
@@ -85,25 +94,25 @@ body {
   color: #020929;
   cursor: pointer;
 }
-.container .items .options button:hover {
+body .container .items .options button:hover {
   background-color: lightblue;
 }
-.container .items .options select {
+body .container .items .options select {
   padding: 7px;
   border: 1px solid #020929;
   border-radius: 3px;
 }
-.container .items .options select .options label,
-.container .items .options select .options select {
+body .container .items .options select .options label,
+body .container .items .options select .options select {
   font-family: "Poppins", sans-serif;
 }
-.container .items .options .input-wrapper {
+body .container .items .options .input-wrapper {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 20px 13px;
 }
-.container .items .options .input-wrapper input[type=color] {
+body .container .items .options .input-wrapper input[type=color] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -113,41 +122,30 @@ body {
   border: none;
   cursor: pointer;
 }
-.container .items .options .input-wrapper input[type=color]::-webkit-color-swatch {
+body .container .items .options .input-wrapper input[type=color]::-webkit-color-swatch {
   border-radius: 15px;
 }
-.container .items .options .input-wrapper input[type=color]::-moz-color-swatch {
+body .container .items .options .input-wrapper input[type=color]::-moz-color-swatch {
   border-radius: 15px;
 }
-.container div:empty:before {
+body .container div:empty:before {
   content: attr(data-placeholder);
   color: gray;
   font-size: 5;
 }
-.container #text-input {
-  margin-top: -20px;
+body .container #text-input {
   background-color: #ffffff;
+  line-height: 20px;
   padding: 20px;
   min-height: 40vh;
   border-radius: 10px;
   width: 95%;
 }
-.container #text-input:hover {
+body .container #text-input:hover {
   border: 1px solid black;
 }
-.container .active {
+body .container .active {
   background-color: #e0e9ff;
-}
-
-.main {
-  margin: 10px 0 10px 0;
-  display: flex;
-  align-items: center;
-  grid-gap: 10px;
-}
-.main .input {
-  height: 30px;
-  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -158,6 +156,6 @@ body {
   }
 }
 @page {
-  size: auto;
+  size: 21cm, 29.7cm;
   margin: 0mm;
 }
