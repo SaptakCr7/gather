@@ -8,8 +8,6 @@ let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 let scriptButtons = document.querySelectorAll(".script");
-
-let btn = document.querySelector(".btn");
 //List of fontlist
 let fontList = [
   "Arial",
@@ -19,7 +17,6 @@ let fontList = [
   "Georgia",
   "Courier New",
   "cursive",
-  "Poppins",
 ];
 //Initial Settings
 const initializer = () => {
@@ -103,9 +100,7 @@ const highlighterRemover = (className) => {
     button.classList.remove("active");
   });
 };
-// window.onload = initializer();
-
-// var noPrintElements = [];
+window.onload = initializer();
 
 window.addEventListener("beforeprint", function (event) {
   var hideMe = document.getElementsByClassName("options");
