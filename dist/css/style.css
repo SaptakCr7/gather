@@ -72,7 +72,8 @@ body .container .items #form .inputboxes input:hover {
   border: 1px solid black;
 }
 body .container .items .options {
-  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   padding: 20px 30px;
   border-radius: 10px;

@@ -76,7 +76,8 @@ body{
             
           }  
               .options {
-                width: 1500px;
+                display: flex;
+                flex-wrap: wrap;
                   background-color: #ffffff;
                   padding: 20px 30px;
                   border-radius: 10px;
